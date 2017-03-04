@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -e /usr/share/source-highlight/src-hilite-lesspipe.sh ] 
+then
+	/usr/share/source-highlight/src-hilite-lesspipe.sh $1 | less -R -M
+else
+	less -R $1
+fi
+
