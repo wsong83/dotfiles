@@ -21,16 +21,34 @@
 
 ;; package control
 (require 'package)
+(setq package-enable-at-startup nil)
 
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
-(unless (package-installed-p 'scala-mode2)
-  (package-refresh-contents) (package-install 'scala-mode2))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(unless (package-installed-p 'markdown-mode)
-  (package-refresh-contents) (package-install 'markdown-mode))
+(eval-when-compile
+  (require 'use-package))
+
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
+
+(use-package scala-mode
+  :interpreter
+  ("scala" . scala-mode))
+
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -38,3 +56,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 129 :width normal)))))
+
