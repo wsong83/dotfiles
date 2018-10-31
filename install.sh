@@ -6,7 +6,7 @@ sudo apt-get install aptitude
 
 sudo aptitude install emacs emacs-goodies-extra-el vim meld source-highlight openssh-server
 sudo aptitude install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
-sudo aptitude install libboost-all-dev texinfo flex bison
+sudo aptitude install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev
 
 mkdir bin
 mkdir tools
