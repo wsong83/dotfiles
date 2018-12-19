@@ -7,8 +7,18 @@ else
     PS1="[\u@\h \W]\$ "
 fi
 
-alias ll="ls -l --color=always"
-alias grep="grep --color=always"
-alias less="less_highlight"
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ll="ls -l --color=always"
+    alias grep="grep --color=always"
+    alias less="less_highlight"
+    PS1="[\[$(tput bold)$(tput setaf 4)\]\u\[$(tput sgr0)\]@\h \[$(tput bold)\]\W\[$(tput sgr0)\]]\$ "
+else
+    alias ll="ls -l"
+    PS1="[\u@\h \W]\$ "
+fi
+
+alias cp="cp -p"
+alias scp="scp -p"
 
 PATH=/usr/lib/ccache:$PATH:~/bin:~/tool/smartgit/bin:~/tool/sbt/bin:.
