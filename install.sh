@@ -8,7 +8,7 @@ sudo aptitude -y install emacs emacs-goodies-extra-el vim meld source-highlight 
 sudo aptitude -y install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
 sudo aptitude -y install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev
 sudo aptitude -y install csh lsb-core device-tree-compiler
-sudo aptitude -y install unrar
+sudo aptitude -y install unrar wine
 
 mkdir bin
 mkdir tools
