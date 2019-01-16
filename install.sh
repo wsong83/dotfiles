@@ -4,10 +4,11 @@ cd ~
 
 sudo apt-get install aptitude
 
-sudo aptitude install emacs emacs-goodies-extra-el vim meld source-highlight openssh-server
-sudo aptitude install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
-sudo aptitude install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev
-sudo aptitude install csh lsb-core device-tree-compiler
+sudo aptitude -y install emacs emacs-goodies-extra-el vim meld source-highlight openssh-server
+sudo aptitude -y install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
+sudo aptitude -y install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev
+sudo aptitude -y install csh lsb-core device-tree-compiler
+sudo aptitude -y install unrar
 
 mkdir bin
 mkdir tools
