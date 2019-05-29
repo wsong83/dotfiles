@@ -14,8 +14,8 @@ mkdir bin
 mkdir tools
 mkdir proj
 
-git clone https://github.com/wsong83/dotfiles.git ~/proj/
-cp ~/proj/dotfiles/bash_env ./
-cp ~/proj/dotfiles/emacs ./.emacs
-cp -r ~/proj/dotfiles/bin/* ./bin/
+cp bash_env ~/
+cp emacs ~/.emacs
+cp sbt ~/.sbt/repositories
+cp -r bin/* ~/bin/
 
