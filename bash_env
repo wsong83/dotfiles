@@ -20,6 +20,6 @@ fi
 
 alias cp="cp -p"
 alias scp="scp -p"
-alias xterm="xterm -fa 'Monospace' -fs 12"
+alias xterm="xterm -fa 'Monospace' -fs 11"
 
 PATH=/usr/lib/ccache:$PATH:~/bin:~/tool/smartgit/bin:~/tool/sbt/bin:.
