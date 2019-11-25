@@ -9,6 +9,7 @@ sudo aptitude -y install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-
 sudo aptitude -y install autotools-dev automake libreadline-dev libelf-dev swig
 sudo aptitude -y install csh lsb-core device-tree-compiler ncurses-dev
 sudo aptitude -y install unrar wine chrpath repo python-pip
+sudo aptitude -y install r-base-dev ess
 
 mkdir -p ~/bin
 mkdir -p ~/tools
