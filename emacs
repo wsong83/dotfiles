@@ -7,7 +7,7 @@
  '(flyspell-delay 1)
  '(indent-tabs-mode nil)
  '(ispell-highlight-face (quote flyspell-incorrect))
- '(ispell-local-dictionary "british")
+ '(ispell-local-dictionary "american")
  '(scroll-bar-mode (quote left))
  '(setq show-paren-style t)
  '(show-paren-mode t)
