@@ -6,7 +6,7 @@ sudo add-apt-repository ppa:apt-fast/stable
 sudo apt-get install apt-fast
 
 sudo apt-fast -y install emacs emacs-goodies-extra-el vim meld source-highlight screen xterm
-sudo apt-fast -y install openssh-server net-tools htop nethogs sshfs
+sudo apt-fast -y install openssh-server net-tools htop nethogs sshfs nfs-client
 sudo apt-fast -y install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
 sudo apt-fast -y install texlive-science texlive-latex-extra gnuplot xfonts-100dpi xfonts-75dpi t1-xfree86-nonfree ttf-xfree86-nonfree
 sudo apt-fast -y install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev
