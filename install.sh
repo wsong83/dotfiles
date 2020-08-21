@@ -22,6 +22,7 @@ mkdir -p ~/proj
 
 cp bash_env ~/
 cp emacs ~/.emacs
+cp gitconfig ~/.gitconfig
 mkdir -p ~/.sbt
 cp sbt ~/.sbt/repositories
 cp -r bin/* ~/bin/
