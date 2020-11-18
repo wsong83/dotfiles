@@ -1,11 +1,20 @@
 #!/usr/bash
 
-sudo apt-get update
+# this script is partially suited for Ubuntu-16.04
+
 sudo apt-get -y install aptitude
-sudo add-apt-repository ppa:apt-fast/stable
+# for apt-fast
+sudo add-apt-repository -y ppa:apt-fast/stable
+# for python 3.6+
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+# for git 2.9+
+sudo add-apt-repository -y ppa:git-core/ppa
+# for gcc-6+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
 sudo apt-get install apt-fast
 
-sudo apt-fast -y install emacs emacs-goodies-extra-el vim meld source-highlight screen xterm
+sudo apt-fast -y install emacs emacs-goodies-extra-el vim meld source-highlight screen xterm git
 sudo apt-fast -y install openssh-server net-tools htop nethogs sshfs nfs-client mutt sendmail
 sudo apt-fast -y install texlive-extra-utils texlive-fonts-recommended texlive-latex-recommended
 sudo apt-fast -y install texlive-science texlive-latex-extra gnuplot xfonts-100dpi xfonts-75dpi t1-xfree86-nonfree ttf-xfree86-nonfree
