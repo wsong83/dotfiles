@@ -10,7 +10,7 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 # for git 2.9+
 sudo add-apt-repository -y ppa:git-core/ppa
 # for gcc-6+
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install apt-fast
 
@@ -24,6 +24,7 @@ sudo apt-fast -y install csh lsb-core device-tree-compiler ncurses-dev
 sudo apt-fast -y install unrar chrpath repo python-pip
 sudo apt-fast -y install r-base-dev ess
 sudo apt-fast -y install fail2ban
+sudo apt-fast -y upgrade
 
 mkdir -p ~/bin
 mkdir -p ~/tools
