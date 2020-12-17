@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo pvscan
+sudo vgscan
+sudo vgchange -ay
+sudo lvscan
