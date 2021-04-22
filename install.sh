@@ -11,6 +11,10 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo add-apt-repository -y ppa:git-core/ppa
 # for gcc-6+
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+# for sbt
+echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add
+
 sudo apt-get update
 sudo apt-get install apt-fast
 
@@ -24,6 +28,7 @@ sudo apt-fast -y install csh lsb-core device-tree-compiler ncurses-dev
 sudo apt-fast -y install unrar chrpath repo python-pip
 sudo apt-fast -y install r-base-dev ess
 sudo apt-fast -y install fail2ban
+sudo apt-fast -y install sbt
 sudo apt-fast -y upgrade
 
 mkdir -p ~/bin
