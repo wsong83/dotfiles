@@ -2,7 +2,7 @@
 
 # this script is partially suited for Ubuntu-16.04
 
-sudo apt-get -y install aptitude
+sudo apt-get -y install aptitude plocate curl
 # for apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
 # for python 3.6+
