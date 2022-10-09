@@ -21,10 +21,9 @@
 
 ;; package control
 (require 'package)
-(setq package-enable-at-startup nil)
-
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(setq package-archives '(("gnu"          . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa"        . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                         ("mepla-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/stable-melpa/")))
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
