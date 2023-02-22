@@ -1,10 +1,12 @@
 #!/usr/bash
 
-# for apt-fast
 sudo add-apt-repository -y ppa:apt-fast/stable
 sudo apt-get install apt-fast
 
-sudo aptitude -y install barrier inkscape
-sudo aptitude -y install r-base r-cran-dplyr r-cran-ggridges
-sudo aptitude -y install gnome-shell-extension-manager
-sudo aptitude -y install texlive-xetex latex-cjk-chinese texlive-lang-cjk
+sudo dpkg-reconfigure dash
+sudo apt-fast -y install barrier ccrypt libfuse2
+sudo apt-fast -y install inkscape libreoffice
+sudo apt-fast -y install texlive-xetex latex-cjk-chinese texlive-lang-cjk
+sudo apt-fast -y install gnucash
+sudo apt-fast -y install r-base r-cran-dplyr r-cran-ggridges
+sudo apt-fast -y install gnome-shell-extension-manager
