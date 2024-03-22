@@ -11,7 +11,7 @@ sudo aptitude -y install texlive-science texlive-latex-extra gnuplot xfonts-100d
 sudo aptitude -y install libboost-all-dev texinfo flex bison libgmp-dev libmpfr-dev libmpc-dev zlib1g-dev libssl-dev
 sudo aptitude -y install autotools-dev automake libreadline-dev libelf-dev swig gawk
 sudo aptitude -y install csh lsb-core device-tree-compiler ncurses-dev
-sudo aptitude -y install unrar chrpath repo python-pip
+sudo aptitude -y install unrar chrpath repo python-pip python3-pip
 sudo aptitude -y install fail2ban
 sudo aptitude -y install scala-mode-el
 sudo aptitude -y upgrade
